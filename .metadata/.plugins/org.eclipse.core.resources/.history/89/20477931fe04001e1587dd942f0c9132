@@ -1,0 +1,58 @@
+@charset "ISO-8859-1";
+
+*{
+	margin-top:0%;
+	margin-bottom:0%;
+	margin-left:0%;
+	margin-right:0%;	
+	background-image: url('background.jpg')
+	background-size:cover;
+}
+.outerBox{
+	height:100%;
+}
+.savebutton{
+	width:25%;
+	border-radius:5px;
+	background-color:#104625;
+}
+.but{
+	display:flex;
+	justify-content: space-between;
+	align-content: center;
+	flex-direction: row;
+	margin-left:20%;
+	margin-right:20%;
+	margin-bottom:30px;
+	margin-top:30px;
+}
+.InnerBox{
+	/* From https://css.glass */
+	background: rgba(255, 255, 255, 0.82);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(15.2px);
+	-webkit-backdrop-filter: blur(15.2px);
+	border: 1px solid rgba(255, 255, 255, 0.7);
+	text-align:center;
+	margin-left:25%;
+	margin-top:20%;
+	margin-right:20%;
+	border:2px solid black;
+}
+table {
+  width: 100%;
+	height:auto;
+}
+table,th,td{
+	border:2px solid #150e38;
+	border-collapse: collapse;
+}
+input{
+	width:40%;
+	margin-left:20px;
+	height: auto;
+	margin-top:5px;
+	margin-bottom:5px;
+	border-radius:5px;
+}

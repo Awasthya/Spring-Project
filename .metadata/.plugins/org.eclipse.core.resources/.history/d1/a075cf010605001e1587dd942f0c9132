@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	<%@include file="StyleProject.css"%>
+</style>
+<link href="StyleProject.css" rel="stylesheet" type="text/css">
+<meta charset="ISO-8859-1">
+<title>Edit Location</title>
+</head>
+<body class="back">
+
+	<form action="updateLoc" method="post">
+		Id :<input type="text" name="id" class="inputField" value="${location.id}" readonly="true"/><br/>
+		Code :<input type="text" name="code" class="inputField" value="${location.code}"/><br/>
+		Name :<input type="text" name="name" class="inputField" value="${location.name}"/><br/>
+		Type : <div class="inputField"> Urban :<input type="radio" name="type" value="urban" ${location.type == "urban" ? "checked":""}/><br/></div>
+			   <div class="inputField"> Rural :<input type="radio" name="type" value="rural" ${location.type == "rural" ? "checked":""}/><br/></div>
+			   
+		<input type="submit" value="Save Edit"/>
+		
+	</form>
+	
+	
+	<a href="displayAllLoc"> View All</a>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Edit Location</title>
+</head>
+<body>
+
+	<form action="saveLoc" method="post">
+		Id :<input type="text" name="id" value="${location.id}"/><br/>
+		Code :<input type="text" name="code" value="${location.code}"/><br/>
+		Name :<input type="text" name="name" value="${location.name}"/><br/>
+		Type : Urban :<input type="radio" name="type" value="urban" /><br/>
+			   Rural :<input type="radio" name="type" value="rural"/><br/>
+			   
+		<input type="submit" value="Save Edit"/>
+		
+	</form>
+	${message}
+	
+	<a href="displayAllLoc"> View All</a>
+</body>
+</html>

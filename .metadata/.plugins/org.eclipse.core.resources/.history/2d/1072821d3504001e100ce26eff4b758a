@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style><%@include file="StyleProject.css"%></style>
+<title>Create Location</title>
+</head>
+<body>
+	<div class="heading">hello</div>
+	<div class="outerBox">
+		<div class="InnerBox">		
+			<form action="saveLoc" method="post">
+				Id :<input type="text" name="id"/><br/>
+				Code :<input type="text" name="code"/><br/>
+				Name :<input type="text" name="name"/><br/>
+				Type : Urban :<input type="radio" name="type" value="urban"/><br/>
+					   Rural :<input type="radio" name="type" value="rural"/><br/>
+					   
+				<input type="submit" value="save"/>
+				
+			</form>
+			${message}
+		</div>	
+	</div>
+	
+	<a href="displayAllLoc"> View All</a>
+</body>
+</html>

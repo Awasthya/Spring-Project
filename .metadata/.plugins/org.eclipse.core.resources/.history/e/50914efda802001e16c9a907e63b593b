@@ -1,0 +1,33 @@
+package com.example.location.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.example.location.entities.Location;
+import com.example.location.service.LocationService;
+
+@Controller
+public class LocationController {
+	
+	@Autowired
+	LocationService service;
+	
+	@RequestMapping("/showCreate")
+	public String showCenter() {
+		return "createLocation";
+	}
+	
+	@RequestMapping("/saveLoc")
+	public String saveLocation(@ModelAttribute("location") Location location,ModelMap modelmap) {
+		// @ModelAttribute is used for get Object beans from front (req)
+		// ModelMap is used for send data to web page
+		System.out.print("dgdfgfgh");
+		Location locationData = service.saveLocation(location);
+		String msg = "Data is Saved successfully with id" + locationData.getId();
+		modelmap.addAttribute("message", msg);
+		return "createLocation";
+	}
+}

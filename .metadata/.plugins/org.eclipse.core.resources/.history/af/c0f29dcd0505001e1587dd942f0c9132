@@ -1,0 +1,71 @@
+@charset "ISO-8859-1";
+
+*{
+	
+	margin-top:0%;
+	margin-bottom:0%;
+	margin-left:0%;
+	margin-right:0%;	
+}
+.back{
+	background-image: url('./image/background.jpg');
+	height:100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.savebutton{
+	width:25%;
+	border-radius:5px;
+	background-color:#104625;
+}
+.but{
+	display:flex;
+	justify-content: space-between;
+	align-content: center;
+	flex-direction: row;
+	margin-left:20%;
+	margin-right:20%;
+	margin-bottom:30px;
+	margin-top:30px;
+}
+.InnerBox{
+	/* From https://css.glass */
+   /* From https://css.glass */
+	background: rgba(255, 255, 255, 0.45);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5.3px);
+	-webkit-backdrop-filter: blur(5.3px);
+	border: 1px solid rgba(255, 255, 255, 0.41);
+
+	text-align:center;
+	margin-left:25%;
+	margin-top:20%;
+	margin-right:20%;
+	border:2px solid black;
+}
+table {
+  width: 100%;
+	height:auto;
+}
+td{
+	height:20%;
+}
+table,th,td{
+	border:2px solid #150e38;
+	border-collapse: collapse;
+}
+.inputField{
+	width:40%;
+	margin-left:20px;
+	height: auto;
+	margin-top:25px;
+	margin-bottom:5px;
+	border-radius:5px;
+}
+.title{
+	margin-right:270px;
+}
+.rural{
+	margin-left:340px;
+}
